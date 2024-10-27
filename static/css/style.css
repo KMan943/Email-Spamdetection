@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3); /* Gradient background */
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 500px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+
+.heading {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    resize: none;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #43A047, #1E88E5);
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form input[type="submit"]:hover {
+    opacity: 0.9;   
+}
+
+
+.result-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+
+/* Result Text Styling */
+.result-text {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Email Text Styling */
+.email-text {
+    font-size: 16px;
+    color: #666;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.reset-btn {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px; /* Add spacing above the button */
+    margin-bottom: 20px; /* Add spacing below the button */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(to right, #43A047, #1E88E5);
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+    Results
+{% endblock title %}
+
+
+{% block content %}
+    <div class="result-container">
+        <h1 class="heading">
+            Results
+        </h1>
+
+        {% if ans == -1 %}
+            <div class="result-text">Some error occurred</div>
+            <div class="result-text"> Please try entering the data again</div>
+        {% else %}
+            <div class="result-text"> The email that you provided: </div>
+            <p class="email-text"> {{Email}} </p>
+            {% if ans == 1 %}
+                <div class="result-text"> is a Spam </div>
+            {% else %}
+                <div class="result-text"> is not a Spam </div>
+            {% endif %}
+        {% endif %}
+
+        <a href="{% url "base:predict" %}" class="reset-btn"> Check another Email </a>
+    </div>
+        
+
+{% endblock content %}
